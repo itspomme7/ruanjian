@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>自学软件工程大纲</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-overlay"></div>
+  <main class="container">
+    <header class="topbar">
+      <h1>自学软件工程大纲</h1>
+      <p class="subtitle">从大学课程体系到完整自学路线 —— 一份完整的学习手册</p>
+      <div class="actions">
+        <button id="toggle-toc" class="btn">切换目录</button>
+        <a id="download-md" class="btn" href="#" download="自学软件工程大纲.md">下载 Markdown</a>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside class="toc" id="toc">
+        <nav>
+          <ul>
+            <li><a href="#university-route">大学四年学习路线</a></li>
+            <li><a href="#major-comparison">计算机类专业对比</a></li>
+            <li><a href="#industry-trends">行业趋势与市场占有率（2025）</a></li>
+            <li><a href="#network-basics">计算机网络基础与分类</a></li>
+            <li><a href="#recommended-directions">适合非数学型学生的方向</a></li>
+            <li><a href="#self-study-route">自学软件工程完整路线</a></li>
+            <li><a href="#monthly-plan">12个月学习阶段速览</a></li>
+            <li><a href="#resources">推荐学习资料总汇</a></li>
+            <li><a href="#study-method">学习节奏与方法</a></li>
+            <li><a href="#final-outcomes">最终成果与速查表</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <article class="content" id="content">
+        <!-- Section: University route -->
+        <section id="university-route" class="card">
+          <h2>🧭 一、软件工程大学四年学习路线（正式院校版）</h2>
+          <p>以下为大学四年主修课程与学习重点。公共课（如政治、体育、英语）不计入，仅列出专业相关核心内容。</p>
+          <table class="striped">
+            <thead>
+              <tr><th>学年</th><th>学习重点</th><th>主要课程</th><th>能力成果</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>大一：打基础阶段</td>
+                <td>了解计算机系统与编程思维</td>
+                <td>C语言程序设计<br>计算机导论<br>离散数学<br>线性代数（基础）<br>计算机组成原理（入门）</td>
+                <td>理解程序逻辑，会用C语言写小程序（如计算器）</td>
+              </tr>
+              <tr>
+                <td>大二：核心编程与系统原理阶段</td>
+                <td>掌握主流语言与算法思维</td>
+                <td>数据结构与算法<br>面向对象程序设计（Java/C++）<br>操作系统<br>计算机网络（入门）<br>数据库系统</td>
+                <td>能写结构化程序，理解数据存储与操作系统工作原理</td>
+              </tr>
+              <tr>
+                <td>大三：项目与专业方向探索阶段</td>
+                <td>结合技术方向，实战应用</td>
+                <td>软件工程原理<br>Web开发技术<br>移动开发<br>人工智能导论<br>计算机网络进阶</td>
+                <td>能独立做小项目，理解团队协作与软件开发流程</td>
+              </tr>
+              <tr>
+                <td>大四：综合实践与就业准备阶段</td>
+                <td>课程整合 + 实战项目</td>
+                <td>毕业设计 / 论文<br>计算机系统结构<br>机器学习基础<br>实习与项目实践</td>
+                <td>能独立完成完整系统项目，准备求职或继续深造</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Section: major comparison -->
+        <section id="major-comparison" class="card">
+          <h2>🧩 二、计算机类专业的主要方向对比</h2>
+          <p>对比不同专业的学习内容、主攻语言、应用方向、难度与趋势。</p>
+          <div class="grid-2">
+            <div>
+              <h3>计算机科学与技术</h3>
+              <ul>
+                <li><strong>学习内容：</strong>算法、操作系统、编译原理</li>
+                <li><strong>主攻语言：</strong>C/C++、Python</li>
+                <li><strong>应用：</strong>底层开发、AI、科研</li>
+                <li><strong>难度：</strong>较难（偏理论）</li>
+                <li><strong>趋势：</strong>上升（AI驱动）</li>
+              </ul>
+            </div>
+            <div>
+              <h3>软件工程</h3>
+              <ul>
+                <li><strong>学习内容：</strong>程序开发、项目管理、系统设计</li>
+                <li><strong>主攻语言：</strong>Java、JavaScript、Python</li>
+                <li><strong>应用：</strong>Web、企业开发</li>
+                <li><strong>难度：</strong>中等（偏实战）</li>
+                <li><strong>趋势：</strong>稳定上升</li>
+              </ul>
+            </div>
+            <div>
+              <h3>网络工程</h3>
+              <ul>
+                <li><strong>学习内容：</strong>网络搭建、安全配置、协议分析</li>
+                <li><strong>主攻语言：</strong>C、Python</li>
+                <li><strong>应用：</strong>运维、安全</li>
+                <li><strong>难度：</strong>中等偏易</li>
+                <li><strong>趋势：</strong>稳定</li>
+              </ul>
+            </div>
+            <div>
+              <h3>信息安全</h3>
+              <ul>
+                <li><strong>学习内容：</strong>加密、渗透、攻防</li>
+                <li><strong>主攻语言：</strong>C、Python、汇编</li>
+                <li><strong>应用：</strong>网络安全工程师</li>
+                <li><strong>难度：</strong>较难</li>
+                <li><strong>趋势：</strong>稳定增长</li>
+              </ul>
+            </div>
+            <div>
+              <h3>人工智能</h3>
+              <ul>
+                <li><strong>学习内容：</strong>机器学习、深度学习</li>
+                <li><strong>主攻语言：</strong>Python、R</li>
+                <li><strong>应用：</strong>数据分析、AI开发</li>
+                <li><strong>难度：</strong>较难（数学强）</li>
+                <li><strong>趋势：</strong>快速上升</li>
+              </ul>
+            </div>
+            <div>
+              <h3>物联网 / 通信工程</h3>
+              <ul>
+                <li><strong>学习内容：</strong>设备互联、传感控制</li>
+                <li><strong>主攻语言：</strong>C、嵌入式语言</li>
+                <li><strong>应用：</strong>智能家居、自动驾驶</li>
+                <li><strong>难度：</strong>中等偏难</li>
+                <li><strong>趋势：</strong>成长中</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: industry trends -->
+        <section id="industry-trends" class="card">
+          <h2>📊 三、当前（2025）计算机行业趋势与市场占有率分析</h2>
+          <table class="striped">
+            <thead>
+              <tr><th>方向</th><th>市场饱和度</th><th>发展趋势（未来3~5年）</th><th>说明</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Web前端 / 全栈开发</td>
+                <td>中等偏饱和</td>
+                <td>稳定增长</td>
+                <td>实用性强，入门友好</td>
+              </tr>
+              <tr>
+                <td>移动端开发（iOS/Android）</td>
+                <td>中等</td>
+                <td>轻微下降</td>
+                <td>被小程序和AI整合替代趋势存在</td>
+              </tr>
+              <tr>
+                <td>后端开发（Java/Go/Node）</td>
+                <td>中性偏旺</td>
+                <td>稳定增长</td>
+                <td>企业刚需，系统稳定</td>
+              </tr>
+              <tr>
+                <td>数据分析 / AI</td>
+                <td>供不应求</td>
+                <td>高速增长</td>
+                <td>高薪、门槛高</td>
+              </tr>
+              <tr>
+                <td>网络工程 / 运维</td>
+                <td>偏饱和</td>
+                <td>轻微下降</td>
+                <td>自动化替代中，向云安全转型</td>
+              </tr>
+              <tr>
+                <td>网络安全</td>
+                <td>稳定增长</td>
+                <td>增长</td>
+                <td>企业核心需求，长期稳定</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Section: network basics -->
+        <section id="network-basics" class="card">
+          <h2>🌐 四、计算机网络基础与分类用途</h2>
+          <ul>
+            <li><strong>LAN（局域网）：</strong>公司、校园内部网络，速度快、稳定。</li>
+            <li><strong>WAN（广域网）：</strong>跨地区网络，互联网骨干。</li>
+            <li><strong>WLAN（无线局域网）：</strong>Wi-Fi 家用及办公。</li>
+            <li><strong>VPN（虚拟专网）：</strong>企业远程安全连接，常见于远程办公。</li>
+            <li><strong>5G / IoT 网络：</strong>用于移动通信与物联网，面向未来。</li>
+          </ul>
+        </section>
+
+        <!-- Section: recommended directions -->
+        <section id="recommended-directions" class="card">
+          <h2>🎯 五、适合非数学型学生的实用方向推荐</h2>
+          <p>你不喜欢与数学、数据研究相关的专业，想要实用、能做项目、能直接就业。最推荐的方向：</p>
+          <h3>软件工程（主攻 Web / 全栈开发）</h3>
+          <ul>
+            <li><strong>优点：</strong>不依赖高等数学；技术实用、能快速上手；能做出可见成果（网站 / App）；就业范围广。</li>
+            <li><strong>适合岗位：</strong>前端工程师、后端工程师、全栈工程师、软件测试等。</li>
+          </ul>
+        </section>
+
+        <!-- Section: self-study route -->
+        <section id="self-study-route" class="card">
+          <h2>🧠 六、自学软件工程完整路线（零基础到就业）</h2>
+          <p><strong>目标：</strong>从零基础到能独立开发完整网站（前后端+数据库+部署）。</p>
+          <p><strong>学习周期：</strong>约 12 个月（每天 3 小时）。</p>
+
+          <h3>阶段一（第1-2月）：编程逻辑 + 网页入门</h3>
+          <ul>
+            <li>学习：HTML、CSS、JavaScript 基础、逻辑控制</li>
+            <li>成果：静态网页（个人主页）、编程思维</li>
+            <li>资源：菜鸟教程、FreeCodeCamp、B 站课程</li>
+          </ul>
+
+          <h3>阶段二（第3-4月）：JavaScript进阶 + 动态交互</h3>
+          <ul>
+            <li>学习：DOM 操作、ES6、事件监听</li>
+            <li>成果：动态网页（Todo 等）</li>
+          </ul>
+
+          <h3>阶段三（第5-6月）：后端 + 数据库入门</h3>
+          <ul>
+            <li>学习：Node.js、Express、MySQL、HTTP/JSON</li>
+            <li>成果：登录注册系统、简单博客后台</li>
+          </ul>
+
+          <h3>阶段四（第7-9月）：前端框架 + 实战项目</h3>
+          <ul>
+            <li>学习：Vue.js、Axios、状态管理（Pinia/Vuex）、前后端分离</li>
+            <li>成果：电商网站、个人博客前端</li>
+          </ul>
+
+          <h3>阶段五（第10-12月）：全栈整合 + 部署上线</h3>
+          <ul>
+            <li>学习：Linux、Nginx、Docker（基础）、Git、云主机部署</li>
+            <li>成果：上线项目、作品集、求职准备</li>
+          </ul>
+        </section>
+
+        <!-- Section: monthly plan -->
+        <section id="monthly-plan" class="card">
+          <h2>📘 七、12 个月学习阶段速览（每日推荐时长：3 小时）</h2>
+          <ol>
+            <li><strong>第1-2月</strong>：HTML/CSS + 编程入门（静态网页）</li>
+            <li><strong>第3-4月</strong>：JavaScript（DOM、ES6、事件）</li>
+            <li><strong>第5-6月</strong>：Node.js + Express + MySQL（后端）</li>
+            <li><strong>第7-9月</strong>：Vue 框架 + 前端项目（电商/博客）</li>
+            <li><strong>第10-12月</strong>：整合 + 部署 + 求职/作品集</li>
+          </ol>
+          <p><strong>每天建议：</strong>1.5 小时看教程 / 学理论，1 小时实战编码，0.5 小时复盘记录。</p>
+        </section>
+
+        <!-- Section: resources -->
+        <section id="resources" class="card">
+          <h2>📚 八、推荐学习资料总汇</h2>
+          <h4>教程网站</h4>
+          <ul>
+            <li>菜鸟教程（runoob.com）</li>
+            <li>FreeCodeCamp（freecodecamp.org/chinese）</li>
+            <li>W3Schools</li>
+            <li>廖雪峰教程（liaoxuefeng.com）</li>
+          </ul>
+          <h4>视频（B站关键词）</h4>
+          <ul>
+            <li>黑马 HTML CSS 入门</li>
+            <li>尚硅谷 JavaScript DOM</li>
+            <li>Node.js Express MySQL 实战</li>
+            <li>黑马 Vue3 实战项目</li>
+            <li>Git 入门、宝塔面板 部署项目</li>
+          </ul>
+          <h4>书籍（进阶）</h4>
+          <ul>
+            <li>《JavaScript 高级程序设计（红宝书）》</li>
+            <li>《你不知道的JavaScript》</li>
+            <li>《深入浅出 Node.js》</li>
+            <li>《Vue.js 设计与实现》</li>
+          </ul>
+        </section>
+
+        <!-- Section: study method -->
+        <section id="study-method" class="card">
+          <h2>🧩 九、自学节奏与学习方法建议</h2>
+          <ul>
+            <li><strong>时间分配：</strong>每天 3 小时：1.5h 学理论 + 1h 实战 + 0.5h 复盘。</li>
+            <li><strong>每周目标：</strong>完成一个模块（如 DOM 操作、API 通信）。</li>
+            <li><strong>每月成果：</strong>完成一个作品（静态→动态→系统→上线）。</li>
+            <li><strong>长期积累：</strong>把所有项目发布到 GitHub，写学习日志，积累作品集。</li>
+          </ul>
+        </section>
+
+        <!-- Section: final outcomes -->
+        <section id="final-outcomes" class="card">
+          <h2>🎓 十、最终成果（学习完成后你能做到）</h2>
+          <ul>
+            <li>能独立开发完整网站（前后端+数据库）。</li>
+            <li>拥有可展示的线上作品集。</li>
+            <li>掌握前后端框架与部署流程。</li>
+            <li>具备求职初级全栈 / 前端工程师资格。</li>
+            <li>不需数学基础，靠逻辑与实战完成成长。</li>
+          </ul>
+
+          <h3>🔎 学习阶段速查表</h3>
+          <table class="striped">
+            <thead><tr><th>阶段</th><th>技能关键点</th><th>项目产出</th></tr></thead>
+            <tbody>
+              <tr><td>入门期</td><td>HTML/CSS/JS基础</td><td>静态网页</td></tr>
+              <tr><td>进阶期</td><td>JS逻辑 + DOM操作</td><td>动态网页</td></tr>
+              <tr><td>成长期</td><td>Node.js + 数据库</td><td>登录注册系统</td></tr>
+              <tr><td>实战期</td><td>Vue框架 + 项目开发</td><td>电商/博客网站</td></tr>
+              <tr><td>完成期</td><td>部署上线 + Git管理</td><td>个人作品集网站</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <footer class="footnote">
+          <p>页面生成时间：<span id="generated-time"></span> · 由 ChatGPT 自动生成</p>
+          <p>背景图片：请将你希望的背景图命名为 <code>java.jpg</code> 并放在同一目录，即可自动替换。</p>
+        </footer>
+
+      </article>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
